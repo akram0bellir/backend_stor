@@ -26,7 +26,7 @@ import {
   S3_ACL,
   MEILISEARCH_HOST,
   MEILISEARCH_ADMIN_KEY
-} from 'lib/constants';
+} from 'src/lib/constants.ts';
 
 loadEnv(process.env.NODE_ENV, process.cwd());
 
