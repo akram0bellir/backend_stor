@@ -30,12 +30,19 @@ export const REDIS_URL = process.env.REDIS_URL;
 /**
  * Admin CORS origins
  */
-export const ADMIN_CORS = process.env.ADMIN_CORS;
+const LOCAL_ADMIN_ORIGINS = IS_DEV ? ['http://localhost:9000', 'http://127.0.0.1:9000'] : [];
+
+const withBackendOrigin = (value?: string): string | undefined =>
+  [...new Set([...(value?.split(',').map((entry) => entry.trim()) ?? []), BACKEND_URL, ...LOCAL_ADMIN_ORIGINS])]
+    .filter(Boolean)
+    .join(',');
+
+export const ADMIN_CORS = withBackendOrigin(process.env.ADMIN_CORS);
 
 /**
  * Auth CORS origins
  */
-export const AUTH_CORS = process.env.AUTH_CORS;
+export const AUTH_CORS = withBackendOrigin(process.env.AUTH_CORS);
 
 /**
  * Store/frontend CORS origins

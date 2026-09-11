@@ -34,7 +34,7 @@
     "@medusajs/workflow-engine-redis": "2.19.0",
     "@react-email/components": "^1.0.1",
     "@rokmohar/medusa-plugin-meilisearch": "2.0.0",
-    "auth-emailpass": "link:@medusajs/medusa/auth-emailpass",
+    "@medusajs/auth-emailpass": "2.19.0",
     "medusajs-launch-utils": "0.0.19",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

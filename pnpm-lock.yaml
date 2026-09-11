@@ -18,6 +18,9 @@ importers:
       '@medusajs/admin-shared':
         specifier: 2.19.0
         version: 2.19.0
+      '@medusajs/auth-emailpass':
+        specifier: 2.19.0
+        version: 2.19.0(@medusajs/framework@2.19.0(@medusajs/cli@2.19.0(@types/node@22.19.1))(@types/node@22.19.1)(ioredis@5.8.2)(vite@7.3.6(@types/node@22.19.1)(jiti@1.21.7)(yaml@2.9.0))(zod@4.2.0))
       '@medusajs/cli':
         specifier: 2.19.0
         version: 2.19.0(@types/node@22.19.1)
@@ -51,9 +54,6 @@ importers:
       '@rokmohar/medusa-plugin-meilisearch':
         specifier: 2.0.0
         version: 2.0.0(ajco4cvgb3624af2p7thtgz6bi)
-      auth-emailpass:
-        specifier: link:@medusajs/medusa/auth-emailpass
-        version: link:@medusajs/medusa/auth-emailpass
       medusajs-launch-utils:
         specifier: 0.0.19
         version: 0.0.19

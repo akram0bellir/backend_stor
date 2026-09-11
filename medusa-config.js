@@ -64,6 +64,18 @@ const medusaConfig = {
   },
   modules: [
     {
+      key: Modules.AUTH,
+      resolve: '@medusajs/medusa/auth',
+      options: {
+        providers: [
+          {
+            resolve: '@medusajs/auth-emailpass',
+            id: 'emailpass'
+          }
+        ]
+      }
+    },
+    {
       key: Modules.FILE,
       resolve: '@medusajs/file',
       options: {
